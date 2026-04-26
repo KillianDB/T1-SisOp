@@ -16,7 +16,6 @@
 #include <unistd.h>
 
 #define TARGET_COUNT 1000000000LL
-#define OUTPUT_FILE "processes_semaphore_output.txt"
 
 typedef struct {
     long long counter;
@@ -64,10 +63,12 @@ int main(int argc, char *argv[]) {
     if (argc == 3) {
         target_count = parse_positive_int(argv[2], "TARGET_COUNT");
     }
+    char output_file[64];
+    snprintf(output_file, sizeof(output_file), "processes_semaphore_%d.txt", n_processes);
 
-    g_log_file = fopen(OUTPUT_FILE, "w");
+    g_log_file = fopen(output_file, "w");
     if (g_log_file == NULL) {
-        fprintf(stderr, "Falha ao abrir %s: %s\n", OUTPUT_FILE, strerror(errno));
+        fprintf(stderr, "Falha ao abrir %s: %s\n", output_file, strerror(errno));
         return EXIT_FAILURE;
     }
 
@@ -169,7 +170,7 @@ int main(int argc, char *argv[]) {
     log_message("Contador final observado: %lld\n", shared->counter);
     log_message("Esperado: %lld\n", target_count);
     log_message("Tempo total: %.6f segundos\n", elapsed);
-    log_message("Log salvo em: %s\n", OUTPUT_FILE);
+    log_message("Log salvo em: %s\n", output_file);
 
     sem_close(sem);
     sem_unlink(sem_name);
