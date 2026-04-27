@@ -83,3 +83,14 @@ Vulnerabilidades:
   | N = 4 | 5.102238 segundos | 62.200252 segundos | 5.155013 segundos | 379.260856 segundos |
   | N = 8 | 4.888641 segundos | 61.825573 segundos | 5.359794 segundos | 369.568808 segundos |
   --------------------------------------------------------------------------------------------
+
+  **Análise de Corrupção:**
+    * Resultados finais do contador em T1 e P1:
+     ---------------------------------
+     |       |    T1     |    P1     |
+     ---------------------------------
+     | N = 2 | 533416328 | 520059733 | 
+     | N = 4 | 324749523 | 339601791 |
+     | N = 8 | 313987900 | 334229627 |
+     ---------------------------------
+  Os resultados de T1 e P1 não conseguiram chegar ao resultado esperado com êxito por race condition. Como o contador utilizado era global, sem um mecanismo de sincronização o Sistema Operacional não conseguiu gerenciar de forma adequada o acesso ao recurso, o que fez com que as threads ou processos em questão sobreescrevessem sem contabilizar o valor já contabilizado das outras threads ou processos. O Debian Linux usa um escalonador preempitivo, que interrompe um processo para dar espaço de execução para outro, o que pode ter ocasionado maior descrepância entre o valor esperado e o resultado final nesses casos, visto que para executar um counter++ o compilador não apenas executa a operação de escrita do +1 no counter, mas primeiro executa a operação de leitura da variavel global.
