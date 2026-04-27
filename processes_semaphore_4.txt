@@ -1,0 +1,35 @@
+=== Processos (fork) com semaforo (sem_open) ===
+Meta global: 1000000000
+Numero de processos: 4
+[Processo 0 | PID=46806] Inicio: quota=250000000
+[Processo 3 | PID=46809] Inicio: quota=250000000
+[Processo 2 | PID=46808] Inicio: quota=250000000
+[Processo 1 | PID=46807] Inicio: quota=250000000
+[Processo 0 | PID=46806] Progresso: 62500000/250000000 (25%)
+[Processo 2 | PID=46808] Progresso: 62500000/250000000 (25%)
+[Processo 3 | PID=46809] Progresso: 62500000/250000000 (25%)
+[Processo 1 | PID=46807] Progresso: 62500000/250000000 (25%)
+[Processo 0 | PID=46806] Progresso: 125000000/250000000 (50%)
+[Processo 2 | PID=46808] Progresso: 125000000/250000000 (50%)
+[Processo 3 | PID=46809] Progresso: 125000000/250000000 (50%)
+[Processo 1 | PID=46807] Progresso: 125000000/250000000 (50%)
+[Processo 0 | PID=46806] Progresso: 187500000/250000000 (75%)
+[Processo 2 | PID=46808] Progresso: 187500000/250000000 (75%)
+[Processo 3 | PID=46809] Progresso: 187500000/250000000 (75%)
+[Processo 1 | PID=46807] Progresso: 187500000/250000000 (75%)
+[Processo 0 | PID=46806] Progresso: 250000000/250000000 (100%)
+[Processo 0 | PID=46806] Fim
+[Pai] Filho PID=46806 terminou com codigo 0
+[Processo 2 | PID=46808] Progresso: 250000000/250000000 (100%)
+[Processo 2 | PID=46808] Fim
+[Pai] Filho PID=46808 terminou com codigo 0
+[Processo 3 | PID=46809] Progresso: 250000000/250000000 (100%)
+[Processo 3 | PID=46809] Fim
+[Pai] Filho PID=46809 terminou com codigo 0
+[Processo 1 | PID=46807] Progresso: 250000000/250000000 (100%)
+[Processo 1 | PID=46807] Fim
+[Pai] Filho PID=46807 terminou com codigo 0
+Contador final observado: 1000000000
+Esperado: 1000000000
+Tempo total: 379.260856 segundos
+Log salvo em: processes_semaphore_4.txt

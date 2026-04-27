@@ -1,0 +1,62 @@
+=== Processos (fork) sem sincronizacao ===
+Meta global: 1000000000
+Numero de processos: 8
+[Processo 0 | PID=46250] Inicio: quota=125000000
+[Processo 1 | PID=46251] Inicio: quota=125000000
+[Processo 2 | PID=46252] Inicio: quota=125000000
+[Processo 3 | PID=46253] Inicio: quota=125000000
+[Processo 6 | PID=46256] Inicio: quota=125000000
+[Processo 4 | PID=46254] Inicio: quota=125000000
+[Processo 7 | PID=46257] Inicio: quota=125000000
+[Processo 5 | PID=46255] Inicio: quota=125000000
+[Processo 1 | PID=46251] Progresso: 31250000/125000000 (25%)
+[Processo 2 | PID=46252] Progresso: 31250000/125000000 (25%)
+[Processo 4 | PID=46254] Progresso: 31250000/125000000 (25%)
+[Processo 6 | PID=46256] Progresso: 31250000/125000000 (25%)
+[Processo 0 | PID=46250] Progresso: 31250000/125000000 (25%)
+[Processo 7 | PID=46257] Progresso: 31250000/125000000 (25%)
+[Processo 1 | PID=46251] Progresso: 62500000/125000000 (50%)
+[Processo 3 | PID=46253] Progresso: 31250000/125000000 (25%)
+[Processo 5 | PID=46255] Progresso: 31250000/125000000 (25%)
+[Processo 4 | PID=46254] Progresso: 62500000/125000000 (50%)
+[Processo 2 | PID=46252] Progresso: 62500000/125000000 (50%)
+[Processo 1 | PID=46251] Progresso: 93750000/125000000 (75%)
+[Processo 7 | PID=46257] Progresso: 62500000/125000000 (50%)
+[Processo 6 | PID=46256] Progresso: 62500000/125000000 (50%)
+[Processo 3 | PID=46253] Progresso: 62500000/125000000 (50%)
+[Processo 5 | PID=46255] Progresso: 62500000/125000000 (50%)
+[Processo 0 | PID=46250] Progresso: 62500000/125000000 (50%)
+[Processo 1 | PID=46251] Progresso: 125000000/125000000 (100%)
+[Processo 1 | PID=46251] Fim
+[Pai] Filho PID=46251 terminou com codigo 0
+[Processo 6 | PID=46256] Progresso: 93750000/125000000 (75%)
+[Processo 4 | PID=46254] Progresso: 93750000/125000000 (75%)
+[Processo 5 | PID=46255] Progresso: 93750000/125000000 (75%)
+[Processo 7 | PID=46257] Progresso: 93750000/125000000 (75%)
+[Processo 2 | PID=46252] Progresso: 93750000/125000000 (75%)
+[Processo 3 | PID=46253] Progresso: 93750000/125000000 (75%)
+[Processo 0 | PID=46250] Progresso: 93750000/125000000 (75%)
+[Processo 6 | PID=46256] Progresso: 125000000/125000000 (100%)
+[Processo 6 | PID=46256] Fim
+[Pai] Filho PID=46256 terminou com codigo 0
+[Processo 5 | PID=46255] Progresso: 125000000/125000000 (100%)
+[Processo 5 | PID=46255] Fim
+[Pai] Filho PID=46255 terminou com codigo 0
+[Processo 4 | PID=46254] Progresso: 125000000/125000000 (100%)
+[Processo 4 | PID=46254] Fim
+[Pai] Filho PID=46254 terminou com codigo 0
+[Processo 3 | PID=46253] Progresso: 125000000/125000000 (100%)
+[Processo 3 | PID=46253] Fim
+[Pai] Filho PID=46253 terminou com codigo 0
+[Processo 2 | PID=46252] Progresso: 125000000/125000000 (100%)
+[Processo 2 | PID=46252] Fim
+[Pai] Filho PID=46252 terminou com codigo 0
+[Processo 7 | PID=46257] Progresso: 125000000/125000000 (100%)
+[Processo 7 | PID=46257] Fim
+[Pai] Filho PID=46257 terminou com codigo 0
+[Processo 0 | PID=46250] Progresso: 125000000/125000000 (100%)
+[Processo 0 | PID=46250] Fim
+[Pai] Filho PID=46250 terminou com codigo 0
+Contador final observado: 334229627
+Tempo total: 5.359794 segundos
+Log salvo em: processes_no_sync_8.txt

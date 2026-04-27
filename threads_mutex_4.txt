@@ -1,0 +1,31 @@
+=== Threads com pthread_mutex ===
+Meta global: 1000000000
+Numero de threads: 4
+[Thread 0] Inicio: quota=250000000
+[Thread 2] Inicio: quota=250000000
+[Thread 1] Inicio: quota=250000000
+[Thread 3] Inicio: quota=250000000
+[Thread 3] Progresso: 62500000/250000000 (25%)
+[Thread 2] Progresso: 62500000/250000000 (25%)
+[Thread 1] Progresso: 62500000/250000000 (25%)
+[Thread 0] Progresso: 62500000/250000000 (25%)
+[Thread 1] Progresso: 125000000/250000000 (50%)
+[Thread 0] Progresso: 125000000/250000000 (50%)
+[Thread 2] Progresso: 125000000/250000000 (50%)
+[Thread 3] Progresso: 125000000/250000000 (50%)
+[Thread 1] Progresso: 187500000/250000000 (75%)
+[Thread 0] Progresso: 187500000/250000000 (75%)
+[Thread 3] Progresso: 187500000/250000000 (75%)
+[Thread 2] Progresso: 187500000/250000000 (75%)
+[Thread 1] Progresso: 250000000/250000000 (100%)
+[Thread 1] Fim
+[Thread 0] Progresso: 250000000/250000000 (100%)
+[Thread 0] Fim
+[Thread 3] Progresso: 250000000/250000000 (100%)
+[Thread 3] Fim
+[Thread 2] Progresso: 250000000/250000000 (100%)
+[Thread 2] Fim
+Contador final observado: 1000000000
+Esperado: 1000000000
+Tempo total: 62.200252 segundos
+Log salvo em: threads_mutex_4.txt

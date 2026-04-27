@@ -1,0 +1,63 @@
+=== Processos (fork) com semaforo (sem_open) ===
+Meta global: 1000000000
+Numero de processos: 8
+[Processo 0 | PID=47314] Inicio: quota=125000000
+[Processo 1 | PID=47315] Inicio: quota=125000000
+[Processo 2 | PID=47316] Inicio: quota=125000000
+[Processo 3 | PID=47317] Inicio: quota=125000000
+[Processo 4 | PID=47318] Inicio: quota=125000000
+[Processo 6 | PID=47320] Inicio: quota=125000000
+[Processo 7 | PID=47321] Inicio: quota=125000000
+[Processo 5 | PID=47319] Inicio: quota=125000000
+[Processo 4 | PID=47318] Progresso: 31250000/125000000 (25%)
+[Processo 6 | PID=47320] Progresso: 31250000/125000000 (25%)
+[Processo 3 | PID=47317] Progresso: 31250000/125000000 (25%)
+[Processo 2 | PID=47316] Progresso: 31250000/125000000 (25%)
+[Processo 7 | PID=47321] Progresso: 31250000/125000000 (25%)
+[Processo 5 | PID=47319] Progresso: 31250000/125000000 (25%)
+[Processo 0 | PID=47314] Progresso: 31250000/125000000 (25%)
+[Processo 1 | PID=47315] Progresso: 31250000/125000000 (25%)
+[Processo 6 | PID=47320] Progresso: 62500000/125000000 (50%)
+[Processo 4 | PID=47318] Progresso: 62500000/125000000 (50%)
+[Processo 3 | PID=47317] Progresso: 62500000/125000000 (50%)
+[Processo 2 | PID=47316] Progresso: 62500000/125000000 (50%)
+[Processo 0 | PID=47314] Progresso: 62500000/125000000 (50%)
+[Processo 7 | PID=47321] Progresso: 62500000/125000000 (50%)
+[Processo 5 | PID=47319] Progresso: 62500000/125000000 (50%)
+[Processo 1 | PID=47315] Progresso: 62500000/125000000 (50%)
+[Processo 6 | PID=47320] Progresso: 93750000/125000000 (75%)
+[Processo 4 | PID=47318] Progresso: 93750000/125000000 (75%)
+[Processo 3 | PID=47317] Progresso: 93750000/125000000 (75%)
+[Processo 2 | PID=47316] Progresso: 93750000/125000000 (75%)
+[Processo 7 | PID=47321] Progresso: 93750000/125000000 (75%)
+[Processo 5 | PID=47319] Progresso: 93750000/125000000 (75%)
+[Processo 0 | PID=47314] Progresso: 93750000/125000000 (75%)
+[Processo 1 | PID=47315] Progresso: 93750000/125000000 (75%)
+[Processo 7 | PID=47321] Progresso: 125000000/125000000 (100%)
+[Processo 7 | PID=47321] Fim
+[Pai] Filho PID=47321 terminou com codigo 0
+[Processo 6 | PID=47320] Progresso: 125000000/125000000 (100%)
+[Processo 6 | PID=47320] Fim
+[Pai] Filho PID=47320 terminou com codigo 0
+[Processo 3 | PID=47317] Progresso: 125000000/125000000 (100%)
+[Processo 3 | PID=47317] Fim
+[Pai] Filho PID=47317 terminou com codigo 0
+[Processo 2 | PID=47316] Progresso: 125000000/125000000 (100%)
+[Processo 2 | PID=47316] Fim
+[Pai] Filho PID=47316 terminou com codigo 0
+[Processo 4 | PID=47318] Progresso: 125000000/125000000 (100%)
+[Processo 4 | PID=47318] Fim
+[Pai] Filho PID=47318 terminou com codigo 0
+[Processo 5 | PID=47319] Progresso: 125000000/125000000 (100%)
+[Processo 5 | PID=47319] Fim
+[Pai] Filho PID=47319 terminou com codigo 0
+[Processo 0 | PID=47314] Progresso: 125000000/125000000 (100%)
+[Processo 0 | PID=47314] Fim
+[Pai] Filho PID=47314 terminou com codigo 0
+[Processo 1 | PID=47315] Progresso: 125000000/125000000 (100%)
+[Processo 1 | PID=47315] Fim
+[Pai] Filho PID=47315 terminou com codigo 0
+Contador final observado: 1000000000
+Esperado: 1000000000
+Tempo total: 369.568808 segundos
+Log salvo em: processes_semaphore_8.txt

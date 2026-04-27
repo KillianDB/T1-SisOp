@@ -1,0 +1,54 @@
+=== Threads sem sincronizacao ===
+Meta global: 1000000000
+Numero de threads: 8
+[Thread 0] Inicio: quota=125000000
+[Thread 2] Inicio: quota=125000000
+[Thread 1] Inicio: quota=125000000
+[Thread 3] Inicio: quota=125000000
+[Thread 6] Inicio: quota=125000000
+[Thread 4] Inicio: quota=125000000
+[Thread 5] Inicio: quota=125000000
+[Thread 7] Inicio: quota=125000000
+[Thread 5] Progresso: 31250000/125000000 (25%)
+[Thread 0] Progresso: 31250000/125000000 (25%)
+[Thread 1] Progresso: 31250000/125000000 (25%)
+[Thread 4] Progresso: 31250000/125000000 (25%)
+[Thread 7] Progresso: 31250000/125000000 (25%)
+[Thread 5] Progresso: 62500000/125000000 (50%)
+[Thread 3] Progresso: 31250000/125000000 (25%)
+[Thread 6] Progresso: 31250000/125000000 (25%)
+[Thread 2] Progresso: 31250000/125000000 (25%)
+[Thread 0] Progresso: 62500000/125000000 (50%)
+[Thread 5] Progresso: 93750000/125000000 (75%)
+[Thread 4] Progresso: 62500000/125000000 (50%)
+[Thread 1] Progresso: 62500000/125000000 (50%)
+[Thread 7] Progresso: 62500000/125000000 (50%)
+[Thread 5] Progresso: 125000000/125000000 (100%)
+[Thread 5] Fim
+[Thread 3] Progresso: 62500000/125000000 (50%)
+[Thread 2] Progresso: 62500000/125000000 (50%)
+[Thread 6] Progresso: 62500000/125000000 (50%)
+[Thread 0] Progresso: 93750000/125000000 (75%)
+[Thread 1] Progresso: 93750000/125000000 (75%)
+[Thread 4] Progresso: 93750000/125000000 (75%)
+[Thread 7] Progresso: 93750000/125000000 (75%)
+[Thread 0] Progresso: 125000000/125000000 (100%)
+[Thread 0] Fim
+[Thread 6] Progresso: 93750000/125000000 (75%)
+[Thread 3] Progresso: 93750000/125000000 (75%)
+[Thread 2] Progresso: 93750000/125000000 (75%)
+[Thread 1] Progresso: 125000000/125000000 (100%)
+[Thread 1] Fim
+[Thread 4] Progresso: 125000000/125000000 (100%)
+[Thread 4] Fim
+[Thread 7] Progresso: 125000000/125000000 (100%)
+[Thread 7] Fim
+[Thread 3] Progresso: 125000000/125000000 (100%)
+[Thread 3] Fim
+[Thread 6] Progresso: 125000000/125000000 (100%)
+[Thread 6] Fim
+[Thread 2] Progresso: 125000000/125000000 (100%)
+[Thread 2] Fim
+Contador final observado: 313987900
+Tempo total: 4.888641 segundos
+Log salvo em: threads_no_sync_8.txt

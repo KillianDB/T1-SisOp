@@ -1,0 +1,30 @@
+=== Threads sem sincronizacao ===
+Meta global: 1000000000
+Numero de threads: 4
+[Thread 0] Inicio: quota=250000000
+[Thread 1] Inicio: quota=250000000
+[Thread 2] Inicio: quota=250000000
+[Thread 3] Inicio: quota=250000000
+[Thread 2] Progresso: 62500000/250000000 (25%)
+[Thread 3] Progresso: 62500000/250000000 (25%)
+[Thread 1] Progresso: 62500000/250000000 (25%)
+[Thread 0] Progresso: 62500000/250000000 (25%)
+[Thread 2] Progresso: 125000000/250000000 (50%)
+[Thread 1] Progresso: 125000000/250000000 (50%)
+[Thread 0] Progresso: 125000000/250000000 (50%)
+[Thread 3] Progresso: 125000000/250000000 (50%)
+[Thread 1] Progresso: 187500000/250000000 (75%)
+[Thread 0] Progresso: 187500000/250000000 (75%)
+[Thread 2] Progresso: 187500000/250000000 (75%)
+[Thread 3] Progresso: 187500000/250000000 (75%)
+[Thread 0] Progresso: 250000000/250000000 (100%)
+[Thread 0] Fim
+[Thread 1] Progresso: 250000000/250000000 (100%)
+[Thread 1] Fim
+[Thread 2] Progresso: 250000000/250000000 (100%)
+[Thread 2] Fim
+[Thread 3] Progresso: 250000000/250000000 (100%)
+[Thread 3] Fim
+Contador final observado: 324749523
+Tempo total: 5.102238 segundos
+Log salvo em: threads_no_sync_4.txt

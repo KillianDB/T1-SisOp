@@ -1,0 +1,20 @@
+=== Processos (fork) sem sincronizacao ===
+Meta global: 1000000000
+Numero de processos: 2
+[Processo 1 | PID=46139] Inicio: quota=500000000
+[Processo 0 | PID=46138] Inicio: quota=500000000
+[Processo 0 | PID=46138] Progresso: 125000000/500000000 (25%)
+[Processo 1 | PID=46139] Progresso: 125000000/500000000 (25%)
+[Processo 0 | PID=46138] Progresso: 250000000/500000000 (50%)
+[Processo 1 | PID=46139] Progresso: 250000000/500000000 (50%)
+[Processo 0 | PID=46138] Progresso: 375000000/500000000 (75%)
+[Processo 1 | PID=46139] Progresso: 375000000/500000000 (75%)
+[Processo 0 | PID=46138] Progresso: 500000000/500000000 (100%)
+[Processo 0 | PID=46138] Fim
+[Pai] Filho PID=46138 terminou com codigo 0
+[Processo 1 | PID=46139] Progresso: 500000000/500000000 (100%)
+[Processo 1 | PID=46139] Fim
+[Pai] Filho PID=46139 terminou com codigo 0
+Contador final observado: 520059733
+Tempo total: 7.031661 segundos
+Log salvo em: processes_no_sync_2.txt

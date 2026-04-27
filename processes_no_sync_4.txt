@@ -1,0 +1,34 @@
+=== Processos (fork) sem sincronizacao ===
+Meta global: 1000000000
+Numero de processos: 4
+[Processo 0 | PID=46196] Inicio: quota=250000000
+[Processo 1 | PID=46197] Inicio: quota=250000000
+[Processo 2 | PID=46198] Inicio: quota=250000000
+[Processo 3 | PID=46199] Inicio: quota=250000000
+[Processo 1 | PID=46197] Progresso: 62500000/250000000 (25%)
+[Processo 2 | PID=46198] Progresso: 62500000/250000000 (25%)
+[Processo 0 | PID=46196] Progresso: 62500000/250000000 (25%)
+[Processo 3 | PID=46199] Progresso: 62500000/250000000 (25%)
+[Processo 1 | PID=46197] Progresso: 125000000/250000000 (50%)
+[Processo 2 | PID=46198] Progresso: 125000000/250000000 (50%)
+[Processo 0 | PID=46196] Progresso: 125000000/250000000 (50%)
+[Processo 3 | PID=46199] Progresso: 125000000/250000000 (50%)
+[Processo 1 | PID=46197] Progresso: 187500000/250000000 (75%)
+[Processo 2 | PID=46198] Progresso: 187500000/250000000 (75%)
+[Processo 3 | PID=46199] Progresso: 187500000/250000000 (75%)
+[Processo 0 | PID=46196] Progresso: 187500000/250000000 (75%)
+[Processo 1 | PID=46197] Progresso: 250000000/250000000 (100%)
+[Processo 1 | PID=46197] Fim
+[Pai] Filho PID=46197 terminou com codigo 0
+[Processo 2 | PID=46198] Progresso: 250000000/250000000 (100%)
+[Processo 2 | PID=46198] Fim
+[Pai] Filho PID=46198 terminou com codigo 0
+[Processo 3 | PID=46199] Progresso: 250000000/250000000 (100%)
+[Processo 3 | PID=46199] Fim
+[Pai] Filho PID=46199 terminou com codigo 0
+[Processo 0 | PID=46196] Progresso: 250000000/250000000 (100%)
+[Processo 0 | PID=46196] Fim
+[Pai] Filho PID=46196 terminou com codigo 0
+Contador final observado: 339601791
+Tempo total: 5.155013 segundos
+Log salvo em: processes_no_sync_4.txt
