@@ -74,3 +74,12 @@ Vulnerabilidades:
   Tsa:                        Not affected
   Tsx async abort:            Not affected
   Vmscape:                    Not affected
+
+  **Tabela de Tempos de Execução:**
+  --------------------------------------------------------------------------------------------
+  |       |       T1          |         T2         |        P1         |          P2         |
+  --------------------------------------------------------------------------------------------
+  | N = 2 | 7.252620 segundos | 57.042310 segundos | 7.031661 segundos | 120.289410 segundos |
+  | N = 4 | 5.102238 segundos | 62.200252 segundos | 5.155013 segundos | 379.260856 segundos |
+  | N = 8 | 4.888641 segundos | 61.825573 segundos | 5.359794 segundos | 369.568808 segundos |
+  --------------------------------------------------------------------------------------------
