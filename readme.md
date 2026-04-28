@@ -83,15 +83,39 @@ Vulnerabilidades:
   Vmscape:                    Not affected
 ```
 
-## Tabela de Tempos de Execucao
+## Tabela de Tempos de Execução
+
+Tempo real (elapsed time) em segundos:
 
 | N | T1 | T2 | P1 | P2 |
 |---|---|---|---|---|
-| 2 | 7.252620 segundos | 57.042310 segundos | 7.031661 segundos | 120.289410 segundos |
-| 4 | 5.102238 segundos | 62.200252 segundos | 5.155013 segundos | 379.260856 segundos |
-| 8 | 4.888641 segundos | 61.825573 segundos | 5.359794 segundos | 369.568808 segundos |
+| 2 | 7.726s | 48.833s | 7.763s | 107.102s |
+| 4 | 6.469s | 51.214s | 6.801s | 389.053s |
+| 8 | 6.268s | 50.844s | 6.943s | 441.261s |
 
-## Analise de Corrupcao
+### Detalhes Completos de Execução
+
+**T1 (Threads sem sincronização):**
+- N=2: real=7.726s, user=13.148s, sys=0.020s
+- N=4: real=6.469s, user=16.076s, sys=0.063s
+- N=8: real=6.268s, user=16.231s, sys=0.104s
+
+**T2 (Threads com mutex):**
+- N=2: real=48.833s, user=61.530s, sys=24.154s
+- N=4: real=51.214s, user=77.336s, sys=38.628s
+- N=8: real=50.844s, user=79.301s, sys=46.638s
+
+**P1 (Processos sem sincronização):**
+- N=2: real=7.763s, user=12.833s, sys=0.043s
+- N=4: real=6.801s, user=15.346s, sys=0.026s
+- N=8: real=6.943s, user=17.767s, sys=0.160s
+
+**P2 (Processos com semáforo):**
+- N=2: real=107.102s, user=113.856s, sys=79.558s
+- N=4: real=389.053s, user=460.738s, sys=475.527s
+- N=8: real=441.261s, user=599.068s, sys=664.560s
+
+## Analise de Corrupção
 
 Resultados finais do contador em T1 e P1:
 
